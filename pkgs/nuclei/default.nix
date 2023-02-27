@@ -1,7 +1,4 @@
-{ lib
-, buildGoModule
-, fetchFromGitHub
-}:
+{ buildGoModule, lib, fetchFromGitHub }:
 
 buildGoModule rec {
   pname = "nuclei";
