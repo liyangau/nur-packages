@@ -14,7 +14,15 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  example-package = pkgs.callPackage ./pkgs/example-package { };
+  act = pkgs.callPackage ./pkgs/act { };
+  case-cli = pkgs.callPackage ./pkgs/case-cli { };
+  deck = pkgs.callPackage ./pkgs/deck { };
+  hexo-cli = pkgs.callPackage ./pkgs/hexo-cli { };
+  kced = pkgs.callPackage ./pkgs/kced { };
+  kong-portal-cli = pkgs.callPackage ./pkgs/kong-portal-cli { };
+  nuclei = pkgs.callPackage ./pkgs/nuclei { };
+  ov = pkgs.callPackage ./pkgs/ov { };
+  spruce = pkgs.callPackage ./pkgs/spruce { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
