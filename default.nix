@@ -16,7 +16,6 @@
 
   act = pkgs.callPackage ./pkgs/act { };
   case-cli = pkgs.callPackage ./pkgs/case-cli { };
-  deck = pkgs.callPackage ./pkgs/deck { };
   hexo-cli = pkgs.callPackage ./pkgs/hexo-cli { };
   kong-portal-cli = pkgs.callPackage ./pkgs/kong-portal-cli { };
   ov = pkgs.callPackage ./pkgs/ov { };
