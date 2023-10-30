@@ -22,6 +22,7 @@
   ov = pkgs.callPackage ./pkgs/ov { };
   spruce = pkgs.callPackage ./pkgs/spruce { };
   gum = pkgs.callPackage ./pkgs/gum { };
+  squoosh-cli = pkgs.callPackage ./pkgs/squoosh-cli { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
