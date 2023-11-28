@@ -12,7 +12,7 @@ buildNpmPackage rec {
     repo = pname;
     rev = "v${version}";
     hash = "sha256-GJLlUkR72wSa9LM3Rx+rEGQl8otbDFFxja9kRRpv5lE=";
-  };cloudflare-clicloudflare-cli
+  };
 
   dontNpmBuild = true;
 
