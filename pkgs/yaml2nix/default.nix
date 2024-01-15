@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage rec {
   };
 
   cargoLock = {
-    lockFile = ./Cargo.lock;
+    lockFile = "${src}/Cargo.lock";
     outputHashes = {
       "serde-nix-0.1.0" = "sha256-5IGKtR8oj6zpWMEpkYdoT5pFNn1Wi/CTWFzBQP1yMpY=";
     };
