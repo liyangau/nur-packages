@@ -30,19 +30,19 @@ let
       "${repo}@${version}"
     ) attrs;
 
-  # pluginConfig = writeText "plugin.cfg" ''
-  #   prometheus:metrics
-  #   errors:errors
-  #   log:log
-  #   template:template
-  #   alternate:github.com/coredns/alternate
-  #   forward:forward
-  # '';
+  pluginConfig = writeText "plugin.cfg" ''
+    prometheus:metrics
+    errors:errors
+    log:log
+    template:template
+    alternate:github.com/coredns/alternate
+    forward:forward
+  '';
 
-  pluginConfig = builtins.fetchurl {
-    url = "https://raw.githubusercontent.com/kumahq/coredns-builds/refs/heads/main/plugin.cfg";
-    sha256 = "0diymh527vbpl40kc1f9qbqzz1dzz2m4wf9lq8v99i5w3z602s25";
-  };
+  # pluginConfig = builtins.fetchurl {
+  #   url = "https://raw.githubusercontent.com/kumahq/coredns-builds/refs/heads/main/plugin.cfg";
+  #   sha256 = "0diymh527vbpl40kc1f9qbqzz1dzz2m4wf9lq8v99i5w3z602s25";
+  # };
 
   externalPlugins = [
     {
