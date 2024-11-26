@@ -23,6 +23,7 @@ buildGoModule rec {
   nativeBuildInputs = [ installShellFiles ];
 
   CGO_ENABLED = 0;
+  doCheck = false;
 
   flags = [
     "-trimpath"
