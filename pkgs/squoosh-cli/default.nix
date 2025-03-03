@@ -23,6 +23,7 @@ buildNpmPackage rec {
   dontNpmBuild = true;
 
   nodejs = nodejs_20;
+  
   meta = {
     description = "Make images smaller using best-in-class codecs";
     homepage = "https://github.com/GoogleChromeLabs/squoosh";
